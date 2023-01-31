@@ -1,0 +1,35 @@
+identificar vendedor
+solicitar número de revisões (*395)
+solicitar número de revisões power (*50)
+solicitar outros serviços relacionados em R$
+somar o total
+até 13439 2% de comissão
+de 13439 a 16800 3% de comissão
+acima de 16800 5% de comissão
+
+valor total em peças vendidas
+5% de comissão
+
+quantidade de filtros vendidos (x)
+se x for > 30% e < 50% do número de revisões, então 80*x
+se x for > 50% do número de revisões, então 100*x
+
+Máquinas vendidas <= 2 R$500 * número de Máquinas
+máquinas vendidas >2 R$800 * núemro de máquinas
+
+quantidade shampoos vendidos * 250 * 0,1
+quantidade deo vendidos * 300 * 0,1
+quantidade ess vendidas * 264 * 0,1
+
+qtdade * rainbowmate valor * 0,1
+qtdade * aquamate valor * 0,1
+qtdade * power valor * 0,1
+qtdade * minijet valor * 0,1
+qtdade * rainjet valor *0,1
+qtdade * rainmate valor * 0,2
+
+qtdade Serviços de higienização * 20
+
+qdtade de retiradas/entregas * 35
+
+
