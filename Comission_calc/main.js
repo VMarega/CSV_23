@@ -36,11 +36,12 @@ const valoresUnitarios = [
     valor: 25}
 ]
 const calculo = document.querySelector("button");
-const revisaoNivel1 = 10080;
+const vendedor = document.getElementById("vendedor")
+const revisaoNivel1 = 5000;
 const revisaoNivel2 = 13440;
 const revisaoNivel3 = 16800;
 const revisoes = document.getElementById("revisoes");
-const revisoesPower = document.getElementById("revpower");;
+const revisoesPower = document.getElementById("revpower");
 const outros = document.getElementById("outros");
 let porcentagem = 0;
 
@@ -68,7 +69,8 @@ let porcentagemComissaoItens1 = 0.1;
 let porcentagemComissaoItens2 = 0.2;
 
 function calculaComissaoRevisoes (){
-    let totalRevisoes = ((revisoesValor * 395)+(revisoesPowerValor * 50) + outrosValor);
+    let totalRevisoes = ((revisoesValor * 395)+(revisoesPowerValor * 50) + (outrosValor));
+    console.log(totalRevisoes);
     if (totalRevisoes > revisaoNivel1 && totalRevisoes <= revisaoNivel2){
         porcentagem = 0.02
     } else if(totalRevisoes > revisaoNivel2 && totalRevisoes <= revisaoNivel3){
@@ -123,7 +125,7 @@ calculo.addEventListener ('click', (e,msg)=>{
     e.preventDefault();
     revisoesValor = revisoes.value;
     revisoesPowerValor = revisoesPower.value;
-    outrosValor = outros.value;
+    outrosValor = parseInt(outros.value);
     valorPecasValor = valorPecas.value;
     qtdadeFiltrosValor = qdtadeFiltros.value;
     qtdadeMaquinasValor = qtdadeMaquinas.value;
@@ -139,9 +141,9 @@ calculo.addEventListener ('click', (e,msg)=>{
     qtdadeRainMateValor = qtdadeRainMate.value;
     qtdadeServicosValor = qtdadeServicos.value;
     qtdadeTaxasValor = qtdadeTaxas.value;
-    
+    vendedorNome = vendedor.value;
     
     let comissaoFinal = calculaComissaoFiltros() + calculaComissaoItens() + calculaComissaoPecas ()+ calculaComissaoRevisoes() + calculaComissaoVendasDeMaquina();
-    msg = alert(`a comissao de é de ${comissaoFinal}`)
+    msg = alert(`a comissao de é ${vendedorNome} de ${comissaoFinal}`)
     
 })
