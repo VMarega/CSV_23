@@ -1,4 +1,4 @@
-//const calcular = document.querySelector("button");
+
 const valoresUnitarios = [
     {item: "revisao",
     valor: 395},
@@ -69,7 +69,7 @@ let porcentagemComissaoItens1 = 0.1;
 let porcentagemComissaoItens2 = 0.2;
 
 function calculaComissaoRevisoes (){
-    let totalRevisoes = ((revisoesValor * 395)+(revisoesPowerValor * 50) + (outrosValor));
+    let totalRevisoes = ((revisoesValor * valoresUnitarios[0].valor)+(revisoesPowerValor * valoresUnitarios[1].valor) + (outrosValor));
     console.log(totalRevisoes);
     if (totalRevisoes > revisaoNivel1 && totalRevisoes <= revisaoNivel2){
         porcentagem = 0.02
