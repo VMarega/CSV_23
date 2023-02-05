@@ -144,6 +144,6 @@ calculo.addEventListener ('click', (e,msg)=>{
     vendedorNome = vendedor.value;
     
     let comissaoFinal = calculaComissaoFiltros() + calculaComissaoItens() + calculaComissaoPecas ()+ calculaComissaoRevisoes() + calculaComissaoVendasDeMaquina();
-    msg = alert(`a comissao de é ${vendedorNome} de ${comissaoFinal}`)
+    msg = alert(`a comissao de ${vendedorNome} é de ${comissaoFinal}`)
     
 })
