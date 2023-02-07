@@ -23,7 +23,7 @@ const valoresUnitarios = [
     {item: "rainmate",
     valor: 1150},
     {item: "taxaDeEntrega",
-    valor: 17.5},
+    valor: 15},
     {item: "servicos",
     valor: 20,
     },
